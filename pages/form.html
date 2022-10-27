@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a1afb6ef68.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/styles.css" type="text/css">
+  <title>Adoption Form</title>
+</head>
+
+<body class="body-form">
+<div class="background"></div>
+<section>
+  <div class="navigation">
+    <div class="logo"><i class="fa-solid fa-paw fa-3x"></i></div>
+    <nav class="menu">
+      <ul class="menuItems">
+        <li><a href="/index.html" data-item="Home">Home</a></li>
+        <li><a href="/pages/form.html" data-item="Form">Form</a></li>
+        <li><a href="/pages/food.html" data-item="Food">Food</a></li>
+        <li><a href="/pages/donate.html" data-item="Donate">Donate</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+<header>
+  <h1 id="form-title">Dog Adoption Form</h1>
+  <img src="/images/dog-peaking.png" alt="dog peaking" class="back-picture">
+</header>
+
+<main>
+  <form id="survey-form">
+    <div>
+      <p id="description"><em>Thank you for wishing to offer a rescue dog a home! Please could you complete the form
+        below
+        and submit it to us. </em></p>
+    </div>
+    <!-- today's date -->
+
+    <div id="todays-date">
+      <label class="main-label" for="today-date">Today's Date: </label>
+      <input required type="date" name="date" id="today-date">
+    </div>
+
+    <!-- dog name -->
+
+    <div id="dogName">
+      <label class="main-label" for="dogNameLabel">Name of the dog you wish to adopt: </label>
+      <input required type="text" id="dogNameLabel" placeholder="Dog Name" required>
+    </div>
+
+
+    <!-- name -->
+
+    <div id="first-last-name">
+      <label class="main-label" for="name" id="name-label">First Name: </label>
+      <input required type="text" id="name" placeholder="John" required>
+
+      <label class="main-label" for="lastName">Last Name: </label>
+      <input required type="text" id="lastName" placeholder="Smith" required>
+    </div>
+
+    <!-- gender -->
+    <div id="gender">
+      <input required type="radio" id="male" name="gender" value="1" required>
+      <label class="main-label" for="male">Male</label>
+
+      <input required type="radio" id="female" name="gender" value="2" required>
+      <label class="main-label" for="female">Female</label>
+    </div>
+
+    <!-- address  -->
+
+    <div id="address">
+      <label class="main-label" for="address1">Address: </label>
+      <input required type="text" id="address1" size="30" placeholder="Enter your address here" required>
+
+
+      <label class="main-label" for="town">Town: </label>
+      <input required type="text" id="town" size="15" placeholder="Your town" required>
+
+      <label class="main-label" for="postcode">Zip code: </label>
+      <input required type="text" id="postcode" size="10" placeholder="Zip code" required>
+
+    </div>
+
+    <!-- email / phone / age -->
+
+    <div id="email-phone">
+      <label class="main-label" id="phone-label" for="phone">Phone: </label>
+      <input required type="tel" id="phone" placeholder="e.g. +44 7675 403 665" required>
+
+      <label class="main-label" id="email-label" for="email">Email: </label>
+      <input required type="email" id="email" placeholder="e.g. youremail@example.co.uk" required size="35">
+
+    </div>
+
+    <!-- age -->
+
+    <div id="age-div">
+      <label class="main-label" for="age">Age of applicant:</label>
+      <input required type="number" id="age" name="age" min="16" max="90" step="1" placeholder="18" required>
+
+    </div>
+
+    <!-- why dog? -->
+
+    <div id="why">
+      <label class="main-label" for="why">Why do you want to adopt a dog? Please check all that apply:</label>
+      <ul>
+        <li><input required type="checkbox" name="reason" id="companion" value="companion">
+          <label for="companion">Pet & Companion</label>
+        </li>
+
+        <li><input required type="checkbox" name="reason" id="gift" value="gift">
+          <label for="gift">Gift</label>
+        </li>
+
+        <li><input required type="checkbox" name="reason" id="hunting" value="hunting">
+          <label for="hunting">Hunting Dog</label>
+        </li>
+
+        <li><input required type="checkbox" name="reason" id="breeding" value="breeding">
+          <label for="breeding">Breeding Dog</label>
+        </li>
+
+        <li><input required type="checkbox" name="reason" id="guard" value="guard">
+          <label for="guard">Guard Dog</label>
+        </li>
+
+        <li><input required type="checkbox" name="reason" id="senior" value="senior">
+          <label for="senior">For a Senior</label>
+        </li>
+
+        <li><input required type="checkbox" name="reason" id="child" value="child">
+          <label for="child">For a Child</label>
+        </li>
+      </ul>
+    </div>
+
+    <!-- allergies -->
+
+    <div id="allergies">
+      <ul><label class="main-label" for="allergies">Is anyone in your household allergic to pets?</label></ul>
+
+      <li><input required type="radio" id="yes" name="allergy" value="1" required>
+        <label for="yes">Yes</label>
+      </li>
+
+      <li><input required type="radio" id="no" name="allergy" value="2" required>
+        <label for="no">No</label>
+      </li>
+
+      <li><input required type="radio" id="noIdea" name="allergy" value="3" required>
+        <label for="sometimes">I do not know</label>
+      </li>
+    </div>
+
+    <!-- pets in household -->
+
+    <div id="pets-household">
+      <ul><label class="main-label" id="number-label">How many pets are already in your household?
+      </label></ul>
+      <li><input required type="number" id="number" min="1" max="10" step="1" placeholder="0"></li>
+    </div>
+
+    <!-- housing -->
+
+    <div id="housing">
+      <label class="main-label">What type of housing you reside?</label>
+      <select id="dropdown">
+        <option disabled selected value>Select an option</option>
+        <option value="apt">Apt / Condo</option>
+        <option value="house">House</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <!-- comments -->
+
+    <div id="prepare">
+      <label class="main-label">How did you prepare yourself?</label>
+    </div>
+    <div id="textarea">
+        <textarea id="comments" rows="10" cols="70"
+                  placeholder=" Write here how did you prepare yourself for adoption."></textarea>
+    </div>
+
+    <!-- submit button -->
+    <button id="submit" type=submit>Submit</button>
+
+
+  </form>
+</main>
+
+<!--above footer -->
+
+<footer id="contact" class="footer">
+  <div class="container-footer">
+    <div class="row">
+      <div class="footer-col">
+        <h4>company</h4>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">affiliate program</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">returns</a></li>
+          <li><a href="#">order status</a></li>
+          <li><a href="#">payment options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>online shop</h4>
+        <ul>
+          <li><a href="#">watch</a></li>
+          <li><a href="#">bag</a></li>
+          <li><a href="#">shoes</a></li>
+          <li><a href="#">dress</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- footer -->
+
+<script src="../js/form.js" type="text/javascript"></script>
+</body>
+
+</html>

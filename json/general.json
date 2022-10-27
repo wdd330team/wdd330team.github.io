@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "name": "Rocky",
+    "age": "2.5 years ",
+    "sex": "Male",
+    "size": "Medium/Large",
+    "personality": "She is very loving and enjoys company, loves to snuggle close to her caregiver",
+    "special_gift": "Incredible sense of hearing.",
+    "breed": "Pomeranian",
+    "imageUrl": "/images/dog1.jpg",
+    "isAdopted": "false"
+  },
+  {
+    "id": "2",
+    "name": "Rex",
+    "age": "6 months",
+    "sex": "Male",
+    "size": "Small",
+    "personality": "Super docile and active puppy loves leash walks in the park",
+    "special_gift": "Excellent car passenger",
+    "breed": "Mongrel",
+    "imageUrl": "/images/dog2.jpg",
+    "isAdopted": "false"
+  },
+  {
+    "id": "3",
+    "name": "Lady",
+    "age": "7 months",
+    "sex": "Female",
+    "size": "Medium",
+    "personality": "Playful, active and loyal",
+    "special_gift": "Excellent making friends with other dogs or cats",
+    "breed": "Mongrel",
+    "imageUrl": "/images/dog3.jpg",
+    "isAdopted": "false"
+  },
+  {
+    "id": "4",
+    "name": "Juno",
+    "age": "3 years",
+    "sex": "Female",
+    "size": "Medium",
+    "personality": "Calm and Polite",
+    "special_gift": "Is very sociable with strangers",
+    "breed": "Schnauzer",
+    "imageUrl": "/images/dog4.jpg",
+    "isAdopted": "false"
+  }
+]

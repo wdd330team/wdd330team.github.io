@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a1afb6ef68.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <title>Adoption Form</title>
+    <style>
+        .cfmTitle,.cfmContent{
+            text-align: center;
+            margin:2rem auto;
+        }
+        h1{
+            font-size: 3rem;
+        }
+    </style>
+</head>
+
+<body class="body-form">
+    <div class="background"></div>
+    <section>
+        <div class="navigation">
+            <div class="logo"><i class="fa-solid fa-paw fa-3x"></i></div>
+            <nav class="menu">
+                <ul class="menuItems">
+                    <li><a href="../index.html" data-item="Home">Home</a></li>
+                    <li><a href="form.html" data-item="Form">Form</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <header>
+        <h1 class="cfmTitle">Confirm!</h1>
+    </header>
+
+    <main>
+        <h2 class = "cfmContent" id="cfmContent">Error order information</h2>
+    </main>
+
+    <script type="text/javascript">
+        let name = localStorage.getItem("name") + "  "
+        let content = name + "Thank you for your kindness! Your adopt request is sent, and we will contact you soon!"
+        document.querySelector("#cfmContent").innerHTML= content
+    </script>
+</body>
+
+</html>
